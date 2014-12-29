@@ -1,0 +1,106 @@
+span {
+  font-family: Arial, Sans-serif;
+  background-color: #E6E6E6;
+  padding: 0.3em;
+  style=width:20em;
+}
+.formstyle{
+  font-family: Arial, Sans-serif;
+  background-color: #F8F8F8;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.3em;
+  margin: 0;
+  white-space: no-wrap;
+  position: absolute;
+  box-sizing: border-box;  
+  width: 50%;
+}
+option{
+  font-family: Arial, Sans-serif;
+  background-color: #F8F8F8;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.3em;
+  margin: 0;
+  white-space: no-wrap;
+}
+.select {
+  border-width: 0.15em;
+  border-style: solid;
+  border-color: #DFDFDF; 
+  border-radius: 5px;
+  white-space: nowrap;
+  margin: 0px;
+  z-index: 0;
+}
+
+#over-map {
+  font-family: Arial, Sans-serif;
+  position: absolute;
+  background-color: #E6E6E6;
+  top: 1em;
+  left: 5em;
+/*  width: 32em; */
+  z-index:2;
+}
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#map-div {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}      
+select {
+  font-family: Arial, Sans-serif;
+  background-color: #F8F8F8;
+  color: #000000;
+  text-decoration: none;
+  padding: 1.05em 0em;
+  margin: 0;
+  border-width: 0.15em;
+  height: 0px;
+  opacity: 0;
+  width:100%;
+  
+}
+label {
+  margin-left: 0.25em;
+  margin-right: 0.1em;
+  width: auto;
+}
+
+#hospitals {
+  float: right;
+  width: 50%;
+}
+#stations {
+  float: left;
+  width: 50%;
+}
+#location-div {
+  clear: both;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+#location {
+  flex-grow: 1;
+}
+
+#distance-div {
+  display: flex;
+  align-items: stretch;  
+}
+.ui-autocomplete {
+  width: 40%;
+}
+
