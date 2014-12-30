@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title> Transportdistanz</title>
+
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="map-div"></div>
+    <div id="over-map" >
+      <div id="stations">
+        <div class="formstyle select" id="station-div">Dienststelle: Murau</div>
+        <select  class="select" id="station-select" onclick="stationSelectClick()">
+        </select>
+      </div>
+      <div id="hospitals">
+      <div class = "formstyle select" id="hospital-div">Krankenhaus: LKH Stolzalpe</div>
+      <select class="select" id="hospital-select" onclick="hospitalSelectClick()">
+      </select>
+      </div>
+      <div id="location-div">
+        <label for="location">Start:</label>
+        <input id="location">
+         <button type="button" onclick="clickButton()">Start</button>
+      </div>
+      <div id="distance-div">
+          <label for="distance">Distanz:</label>
+          <input class="distance-input" id="distance" readonly>
+          <label for="distance_return">Rücktransport: </label>
+          <input class="distance-input" id="distance_return" readonly>
+      </div>
+    </div>
+
+
+  </body>
+</html>
