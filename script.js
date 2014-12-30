@@ -20,7 +20,10 @@ var hospitals = [
 {key: "LKH Stolzalpe", address: "Stolzalpe 38, 8852 Stolzalpe", default:true},
 {key: "LKH Tamsweg", address: "Bahnhofstraße 7, 5580 Tamsweg"},
 {key: "LSF Graz", address: "  Wagner Jauregg Platz 1, 8053 Graz"},
-{key: "UKH Graz", address: "Göstinger Straße 24, 8020 Graz"}
+{key: "UKH Graz", address: "Göstinger Straße 24, 8020 Graz"},
+{key: "Dr. Friess", address: "Schwarzenbergstraße 2a, 8850 Murau"},
+{key: "Dr. Katschnig", address: "Burggasse 108, 8750 Judenburg"},
+{key: "Dr. Pferschy", address: "Friesacherstraße 5, 8850 Murau"}
 ];
 
 
@@ -148,7 +151,7 @@ function routeCallback(distance_tag, result, status) {
 }
 
 function hospitalSelectClick() {
-    document.getElementById("hospital-div").innerHTML = 'Krankenhaus: ' + hospital_element[hospital_element.selectedIndex].text;
+    document.getElementById("hospital-div").innerHTML = 'Ziel: ' + hospital_element[hospital_element.selectedIndex].text;
     }
 
 function stationSelectClick() {
