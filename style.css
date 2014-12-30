@@ -2,7 +2,7 @@ span {
   font-family: Arial, Sans-serif;
   background-color: #E6E6E6;
   padding: 0.3em;
-  style=width:20em;
+  width:20em;
 }
 .formstyle{
   font-family: Arial, Sans-serif;
@@ -11,7 +11,7 @@ span {
   text-decoration: none;
   padding: 0.3em;
   margin: 0;
-  white-space: no-wrap;
+  white-space: nowrap;
   position: absolute;
   box-sizing: border-box;  
   width: 50%;
@@ -21,9 +21,9 @@ option{
   background-color: #F8F8F8;
   color: #000000;
   text-decoration: none;
-  padding: 0.3em;
+  padding: 0.5em;
   margin: 0;
-  white-space: no-wrap;
+  white-space: nowrap;
 }
 .select {
   border-width: 0.15em;
@@ -33,6 +33,18 @@ option{
   white-space: nowrap;
   margin: 0px;
   z-index: 0;
+}
+select {
+  font-family: Arial, Sans-serif;
+  background-color: #F8F8F8;
+  color: #000000;
+  text-decoration: none;
+  padding: 1.05em 0em;
+  border-width: 0.15em;
+  height: 0px;
+  opacity: 0;
+  width:100%;
+  
 }
 
 #over-map {
@@ -58,19 +70,6 @@ html, body {
   left: 0px;
   z-index: 1;
 }      
-select {
-  font-family: Arial, Sans-serif;
-  background-color: #F8F8F8;
-  color: #000000;
-  text-decoration: none;
-  padding: 1.05em 0em;
-  margin: 0;
-  border-width: 0.15em;
-  height: 0px;
-  opacity: 0;
-  width:100%;
-  
-}
 label {
   margin-left: 0.25em;
   margin-right: 0.1em;
