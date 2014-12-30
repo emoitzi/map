@@ -3,8 +3,8 @@ var distance, distance_return, geocoder, searched = false;
 
 var stations = [ 
 {key: "Murau", address: "Märzenkeller 16, 8850 Murau", default:true},
-{key: "Neumarkt", address: "Freimoosstraße 3, 8860 Neumarkt, Österreich"}
-{key: "Oberwölz", address: "Vorstadt 117, 8832 Oberwölz, Österreich"},
+{key: "Neumarkt", address: "Freimoosstraße 3, 8860 Neumarkt, Österreich"},
+{key: "Oberwölz", address: "Vorstadt 117, 8832 Oberwölz, Österreich"}
 ];
 
 var hospitals = [
@@ -18,9 +18,9 @@ var hospitals = [
 {key: "LKH Knittelfeld", address: "Gaaler Straße 10, 8720 Knittelfeld"},
 {key: "LKH Leoben", address: "Vordernbergerstraße 42, 8700 Leoben"},
 {key: "LKH Stolzalpe", address: "Stolzalpe 38, 8852 Stolzalpe", default:true},
-{key: "LKH Tamsweg", address: "Bahnhofstraße 7, 5580 Tamsweg"}
+{key: "LKH Tamsweg", address: "Bahnhofstraße 7, 5580 Tamsweg"},
 {key: "LSF Graz", address: "  Wagner Jauregg Platz 1, 8053 Graz"},
-{key: "UKH Graz", address: "Göstinger Straße 24, 8020 Graz"},
+{key: "UKH Graz", address: "Göstinger Straße 24, 8020 Graz"}
 ];
 
 
