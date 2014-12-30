@@ -50,7 +50,8 @@ $(document).ready(function() {
     hospital_element = document.getElementById("hospital-select");
     station_element = document.getElementById("station-select");
 
-    
+    $("#start-button").click(startSearch);
+
     $("#location").autocomplete({
       source: getAddressSuggestions,
       minLength: 4,
@@ -63,15 +64,18 @@ $(document).ready(function() {
         }
     })
     .change(clearResult);
-    $("#hospital-select").change(clearResult);
-    $("#station-select").change(clearResult);
 
-    distance = document.getElementById("distance");
-    distance_return = document.getElementById("distance_return");
+    $("#hospital-select").change(clearResult)
+        .click(hospitalSelectClick);
+    $("#station-select").change(clearResult)
+        .click(stationSelectClick);
     populateSelect("#hospital-select", hospitals);
     populateSelect("#station-select", stations);
     hospitalSelectClick();
     stationSelectClick();
+
+    distance = document.getElementById("distance");
+    distance_return = document.getElementById("distance_return");
 });
 
 
@@ -115,7 +119,6 @@ function getAddressSuggestions(location, callback) {
 
       });
     }
-    console.log(JSON.stringify(sug));
     callback(sug);
 
 
@@ -152,7 +155,7 @@ function stationSelectClick() {
     document.getElementById("station-div").innerHTML = 'Dienststelle: ' + station_element[station_element.selectedIndex].text;
 }
 
-function clickButton() {
+function startSearch() {
     var station,request, request_return, location;
     searched = true;
     location = $("#location").val();
@@ -188,28 +191,3 @@ function clickButton() {
         }    
     });
 }
-
-function getStation() {
-    var station_name = station_element.value;
-    switch (station_name) {
-        case 'Murau':
-            return "Märzenkeller 16, 8850 Murau, Österreich";
-        case 'Neumarkt':
-            return "Freimoosstraße 3, 8860 Neumarkt, Österreich";
-        case 'Oberwölz':
-            return "Vorstadt 117, 8832 Oberwölz, Österreich";
-    }
-}
-
-    function getHospital() {
-        var hospital_name = hospital_element.value;
-        switch (hospital_name) {
-            case "LKH Stolzalpe":
-                return "Stolzalpe 38, 8852 Stolzalpe";
-            case "LKH Knittelfeld":
-                return "Gaaler Straße 10, 8720 Knittelfeld";
-
-
-        }
-
-    }
