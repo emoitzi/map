@@ -3,24 +3,24 @@ var distance, distance_return, geocoder, searched = false;
 
 var stations = [ 
 {key: "Murau", address: "Märzenkeller 16, 8850 Murau", default:true},
-{key: "Oberwölz", address: "Vorstadt 117, 8832 Oberwölz, Österreich"},
 {key: "Neumarkt", address: "Freimoosstraße 3, 8860 Neumarkt, Österreich"}
+{key: "Oberwölz", address: "Vorstadt 117, 8832 Oberwölz, Österreich"},
 ];
 
 var hospitals = [
-{key: "LKH Stolzalpe", address: "Stolzalpe 38, 8852 Stolzalpe", default:true},
-{key: "LKH Knittelfeld", address: "Gaaler Straße 10, 8720 Knittelfeld"},
-{key: "LKH Judenburg", address: "Oberweggasse 18, 8750 Judenburg"},
-{key: "LKH Leoben", address: "Vordernbergerstraße 42, 8700 Leoben"},
+{key: "BHB St.Veit/Glan", address: "Spitalgasse 26, 9300 St. Veit/Glan"},
+{key: "DOKH Friesach", address: "St. Veiterstraße 12, 9360 Friesach"},
 {key: "LKH Bruck/Mur", address: "Tragösserstraße 1, Bruck/Mur"},
 {key: "LKH Graz", address: "Auenbruggerplatz 1, 8010 Graz"},
 {key: "LKH Graz West", address: "Göstinger Straße 22, 8020 Graz"},
+{key: "LKH Judenburg", address: "Oberweggasse 18, 8750 Judenburg"},
+{key: "LKH Klagenfurt", address: "Feschniggstraße 11, 9020 Klagenfurt"},
+{key: "LKH Knittelfeld", address: "Gaaler Straße 10, 8720 Knittelfeld"},
+{key: "LKH Leoben", address: "Vordernbergerstraße 42, 8700 Leoben"},
+{key: "LKH Stolzalpe", address: "Stolzalpe 38, 8852 Stolzalpe", default:true},
+{key: "LKH Tamsweg", address: "Bahnhofstraße 7, 5580 Tamsweg"}
 {key: "LSF Graz", address: "  Wagner Jauregg Platz 1, 8053 Graz"},
 {key: "UKH Graz", address: "Göstinger Straße 24, 8020 Graz"},
-{key: "LKH Klagenfurt", address: "Feschniggstraße 11, 9020 Klagenfurt"},
-{key: "DOKH Friesach", address: "St. Veiterstraße 12, 9360 Friesach"},
-{key: "BHB St.Veit/Glan", address: "Spitalgasse 26, 9300 St. Veit/Glan"},
-{key: "LKH Tamsweg", address: "Bahnhofstraße 7, 5580 Tamsweg"}
 ];
 
 
