@@ -4,7 +4,8 @@ var distance, distance_return, geocoder, searched = false;
 var stations = [ 
 {key: "Murau", address: "Märzenkeller 16, 8850 Murau", default:true},
 {key: "Neumarkt", address: "Freimoosstraße 3, 8860 Neumarkt, Österreich"},
-{key: "Oberwölz", address: "Vorstadt 117, 8832 Oberwölz, Österreich"}
+{key: "Oberwölz", address: "Vorstadt 117, 8832 Oberwölz, Österreich"},
+{key: "Stadl/Mur", address: "Stadl an der Mur 120, 8862 Stadl an der Mur, Österreich"}
 ];
 
 var hospitals = [
